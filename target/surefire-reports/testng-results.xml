@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-16T02:13:39 MSK" name="Surefire suite" finished-at="2025-07-16T02:15:26 MSK" duration-ms="106840">
+    <groups>
+    </groups>
+    <test started-at="2025-07-16T02:13:39 MSK" name="Surefire test" finished-at="2025-07-16T02:15:26 MSK" duration-ms="106840">
+      <class name="testcases.WebTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.WebTest@7bd4937b]" started-at="2025-07-16T02:15:24 MSK" name="openBrowser" finished-at="2025-07-16T02:15:25 MSK" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testPageTitle()[pri:0, instance:testcases.WebTest@7bd4937b]" started-at="2025-07-16T02:15:25 MSK" name="testPageTitle" finished-at="2025-07-16T02:15:26 MSK" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.WebTest@7bd4937b]" started-at="2025-07-16T02:15:26 MSK" name="closeBrowser" finished-at="2025-07-16T02:15:26 MSK" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.WebTest -->
+      <class name="testcases.TestHomePage">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:39 MSK" name="openBrowser" finished-at="2025-07-16T02:13:40 MSK" duration-ms="1101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loadHomePageForTest()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:40 MSK" name="loadHomePageForTest" finished-at="2025-07-16T02:13:45 MSK" duration-ms="5147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHomePageForTest -->
+        <test-method signature="TestHomePageTitle()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:45 MSK" name="TestHomePageTitle" finished-at="2025-07-16T02:13:45 MSK" duration-ms="251" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Automation Exercise!] but found [Automation Exercise]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Automation Exercise!] but found [Automation Exercise]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.TestHomePage.TestHomePageTitle(TestHomePage.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHomePageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:45 MSK" name="closeBrowser" finished-at="2025-07-16T02:13:46 MSK" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:46 MSK" name="openBrowser" finished-at="2025-07-16T02:13:46 MSK" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loadHomePageForTest()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:46 MSK" name="loadHomePageForTest" finished-at="2025-07-16T02:13:51 MSK" duration-ms="4523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHomePageForTest -->
+        <test-method signature="TestLoginSignupButton()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:51 MSK" name="TestLoginSignupButton" description="Test Login-Signup button on the Home page" finished-at="2025-07-16T02:13:52 MSK" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLoginSignupButton -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestHomePage@1e683a3e]" started-at="2025-07-16T02:13:52 MSK" name="closeBrowser" finished-at="2025-07-16T02:13:52 MSK" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TestHomePage -->
+      <class name="testcases.TestLoginPage">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:13:52 MSK" name="openBrowser" finished-at="2025-07-16T02:13:52 MSK" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:13:52 MSK" name="setup_class" finished-at="2025-07-16T02:13:58 MSK" duration-ms="5109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginEmailAndWithoutPassword()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:13:58 MSK" name="testLoginEmailAndWithoutPassword" finished-at="2025-07-16T02:13:58 MSK" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmailAndWithoutPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:13:58 MSK" name="closeBrowser" finished-at="2025-07-16T02:13:58 MSK" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:13:58 MSK" name="openBrowser" finished-at="2025-07-16T02:13:59 MSK" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:13:59 MSK" name="setup_class" finished-at="2025-07-16T02:14:04 MSK" duration-ms="5652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:04 MSK" name="testLoginWithInvalidCredentials" data-provider="invalidUserCredentials" finished-at="2025-07-16T02:14:05 MSK" duration-ms="523" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feciwe6718@anlocc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass&Pas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your email or password is incorrect!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbc6bf8d6cb12b58d7e547f7104db89d, getElementAttribute {name=validationMessage, id=f.4245CCB5B9846AB3C260D1CDA87D9636.d.F30ABE2138DE243CACAB5F5E9E1B9FC6.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54263/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dbc6bf8d6cb12b58d7e547f7104db89d)] -> xpath: //input[@name='email']]
+Session ID: dbc6bf8d6cb12b58d7e547f7104db89d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbc6bf8d6cb12b58d7e547f7104db89d, getElementAttribute {name=validationMessage, id=f.4245CCB5B9846AB3C260D1CDA87D9636.d.F30ABE2138DE243CACAB5F5E9E1B9FC6.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54263/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dbc6bf8d6cb12b58d7e547f7104db89d)] -> xpath: //input[@name='email']]
+Session ID: dbc6bf8d6cb12b58d7e547f7104db89d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+at testcases.TestLoginPage.testLoginWithInvalidCredentials(TestLoginPage.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:05 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:05 MSK" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:05 MSK" name="openBrowser" finished-at="2025-07-16T02:14:06 MSK" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:06 MSK" name="setup_class" finished-at="2025-07-16T02:14:11 MSK" duration-ms="4944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:11 MSK" name="testLoginWithInvalidCredentials" data-provider="invalidUserCredentials" finished-at="2025-07-16T02:14:11 MSK" duration-ms="592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feciwe6718@anlocc.co]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass&Pas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your email or password is incorrect!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:11 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:11 MSK" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:11 MSK" name="openBrowser" finished-at="2025-07-16T02:14:12 MSK" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:12 MSK" name="setup_class" finished-at="2025-07-16T02:14:17 MSK" duration-ms="4967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:17 MSK" name="testLoginWithInvalidCredentials" data-provider="invalidUserCredentials" finished-at="2025-07-16T02:14:18 MSK" duration-ms="603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feciwe6718@anlo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567Aa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your email or password is incorrect!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:18 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:18 MSK" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:18 MSK" name="openBrowser" finished-at="2025-07-16T02:14:19 MSK" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:19 MSK" name="setup_class" finished-at="2025-07-16T02:14:24 MSK" duration-ms="5004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:24 MSK" name="testLoginWithInvalidCredentials" data-provider="invalidUserCredentials" finished-at="2025-07-16T02:14:34 MSK" duration-ms="10315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:34 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:34 MSK" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:34 MSK" name="openBrowser" finished-at="2025-07-16T02:14:35 MSK" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:35 MSK" name="setup_class" finished-at="2025-07-16T02:14:40 MSK" duration-ms="5558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:40 MSK" name="testLoginWithInvalidCredentials" data-provider="invalidUserCredentials" finished-at="2025-07-16T02:14:41 MSK" duration-ms="158" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[feciwe6718@anlo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please fill out this field.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please fill out this field.] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.TestLoginPage.testLoginWithInvalidCredentials(TestLoginPage.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:41 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:41 MSK" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:41 MSK" name="openBrowser" finished-at="2025-07-16T02:14:41 MSK" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:41 MSK" name="setup_class" finished-at="2025-07-16T02:14:46 MSK" duration-ms="5008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidEmailAndPassword()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:46 MSK" name="testLoginWithInvalidEmailAndPassword" finished-at="2025-07-16T02:14:47 MSK" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidEmailAndPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:47 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:47 MSK" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:47 MSK" name="openBrowser" finished-at="2025-07-16T02:14:48 MSK" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:48 MSK" name="setup_class" finished-at="2025-07-16T02:14:53 MSK" duration-ms="5046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidEmailAndValidPassword()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:53 MSK" name="testLoginWithInvalidEmailAndValidPassword" finished-at="2025-07-16T02:14:54 MSK" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidEmailAndValidPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:54 MSK" name="closeBrowser" finished-at="2025-07-16T02:14:54 MSK" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:54 MSK" name="openBrowser" finished-at="2025-07-16T02:14:54 MSK" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:54 MSK" name="setup_class" finished-at="2025-07-16T02:14:59 MSK" duration-ms="4782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithInvalidPassword()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:14:59 MSK" name="testLoginWithInvalidPassword" finished-at="2025-07-16T02:15:00 MSK" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:00 MSK" name="closeBrowser" finished-at="2025-07-16T02:15:00 MSK" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:00 MSK" name="openBrowser" finished-at="2025-07-16T02:15:01 MSK" duration-ms="721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:01 MSK" name="setup_class" finished-at="2025-07-16T02:15:06 MSK" duration-ms="5497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:06 MSK" name="testLoginWithValidCredentials" finished-at="2025-07-16T02:15:18 MSK" duration-ms="11986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:18 MSK" name="closeBrowser" finished-at="2025-07-16T02:15:18 MSK" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:18 MSK" name="openBrowser" finished-at="2025-07-16T02:15:19 MSK" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setup_class()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:19 MSK" name="setup_class" finished-at="2025-07-16T02:15:24 MSK" duration-ms="4936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_class -->
+        <test-method signature="testLoginWithoutEmailAndPassword()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:24 MSK" name="testLoginWithoutEmailAndPassword" finished-at="2025-07-16T02:15:24 MSK" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithoutEmailAndPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TestLoginPage@2c35e847]" started-at="2025-07-16T02:15:24 MSK" name="closeBrowser" finished-at="2025-07-16T02:15:24 MSK" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TestLoginPage -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

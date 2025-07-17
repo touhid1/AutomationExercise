@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">106,840</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.TestHomePage</td><td><a href="#m0">TestHomePageTitle</a></td><td rowspan="1">1752621225700</td><td rowspan="1">251</td></tr><tr class="failedodd"><td rowspan="2">testcases.TestLoginPage</td><td><a href="#m1">testLoginWithInvalidCredentials</a></td><td rowspan="2">1752621244967</td><td rowspan="2">523</td></tr><tr class="failedodd"><td><a href="#m2">testLoginWithInvalidCredentials</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.TestHomePage</td><td><a href="#m3">TestLoginSignupButton</a></td><td rowspan="1">1752621231394</td><td rowspan="1">672</td></tr><tr class="passedodd"><td rowspan="9">testcases.TestLoginPage</td><td><a href="#m4">testLoginEmailAndWithoutPassword</a></td><td rowspan="1">1752621238051</td><td rowspan="1">375</td></tr><tr class="passedodd"><td><a href="#m5">testLoginWithInvalidCredentials</a></td><td rowspan="3">1752621257708</td><td rowspan="3">603</td></tr><tr class="passedodd"><td><a href="#m6">testLoginWithInvalidCredentials</a></td></tr><tr class="passedodd"><td><a href="#m7">testLoginWithInvalidCredentials</a></td></tr><tr class="passedodd"><td><a href="#m8">testLoginWithInvalidEmailAndPassword</a></td><td rowspan="1">1752621286919</td><td rowspan="1">638</td></tr><tr class="passedodd"><td><a href="#m9">testLoginWithInvalidEmailAndValidPassword</a></td><td rowspan="1">1752621293478</td><td rowspan="1">539</td></tr><tr class="passedodd"><td><a href="#m10">testLoginWithInvalidPassword</a></td><td rowspan="1">1752621299625</td><td rowspan="1">714</td></tr><tr class="passedodd"><td><a href="#m11">testLoginWithValidCredentials</a></td><td rowspan="1">1752621306669</td><td rowspan="1">11986</td></tr><tr class="passedodd"><td><a href="#m12">testLoginWithoutEmailAndPassword</a></td><td rowspan="1">1752621324420</td><td rowspan="1">310</td></tr><tr class="passedeven"><td rowspan="1">testcases.WebTest</td><td><a href="#m13">testPageTitle</a></td><td rowspan="1">1752621325564</td><td rowspan="1">594</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">testcases.TestHomePage#TestHomePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Automation Exercise!] but found [Automation Exercise]
+	at testcases.TestHomePage.TestHomePageTitle(TestHomePage.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.TestLoginPage#testLoginWithInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>feciwe6718@anlocc.com</td><td>Pass&amp;Pas</td><td>Your email or password is incorrect!</td><td></td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbc6bf8d6cb12b58d7e547f7104db89d, getElementAttribute {name=validationMessage, id=f.4245CCB5B9846AB3C260D1CDA87D9636.d.F30ABE2138DE243CACAB5F5E9E1B9FC6.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54263/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dbc6bf8d6cb12b58d7e547f7104db89d)] -&gt; xpath: //input[@name=&apos;email&apos;]]
+Session ID: dbc6bf8d6cb12b58d7e547f7104db89d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+	at testcases.TestLoginPage.testLoginWithInvalidCredentials(TestLoginPage.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.TestLoginPage#testLoginWithInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>feciwe6718@anlo.com</td><td></td><td></td><td>Please fill out this field.</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: expected [Please fill out this field.] but found []
+	at testcases.TestLoginPage.testLoginWithInvalidCredentials(TestLoginPage.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.TestHomePage#TestLoginSignupButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.TestLoginPage#testLoginEmailAndWithoutPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.TestLoginPage#testLoginWithInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>feciwe6718@anlo.com</td><td>1234567Aa</td><td>Your email or password is incorrect!</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.TestLoginPage#testLoginWithInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td></td><td></td><td></td><td>Please fill out this field.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.TestLoginPage#testLoginWithInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>feciwe6718@anlocc.co</td><td>Pass&amp;Pas</td><td>Your email or password is incorrect!</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.TestLoginPage#testLoginWithInvalidEmailAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.TestLoginPage#testLoginWithInvalidEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.TestLoginPage#testLoginWithInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.TestLoginPage#testLoginWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testcases.TestLoginPage#testLoginWithoutEmailAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testcases.WebTest#testPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

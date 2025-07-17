@@ -1,0 +1,8 @@
+pages\BasePage.class
+utilities\DataSet.class
+testcases\TestLoginPage.class
+pages\LoginPage.class
+testcases\WebTest.class
+pages\HomePage.class
+testcases\TestHomePage.class
+utilities\DriverSetup.class
